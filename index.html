@@ -4,63 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REAC-NPS</title>
-    <style>
-        header {
-            background-color: #fff;
-            color: #6a6a6a;
-            text-align: center;
-            padding: 20px;
-            border-radius: 25px;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        body {
-            font-family: Inter;
-            margin: 0;
-            padding: 0;
-            background-color: #d3d3d3;
-            border-radius: 25px;
-        }
-        h1 {
-            margin: 10;
-            text-align: center;
-        }
-        nav {
-            text-align: center;
-            max-width: 800px;
-            margin: 20px auto;
-            padding : 1px;
-            border-radius: 25px;
-            background-color: #6a6a6a;
-            color: #fff;
-        }
-        nav ul {
-            border-radius: 25px;
-            list-style-type: none;
-            color: #F4F4F4;
-            padding: 0;
-            background-color: #6a6a6a;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-            color: #f4f4f4;
-            font-size: large;
-        }
-        nav ul li a{
-            color: #d3d3d3;
-            
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 25px;
-            color: #6a6a6a;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="main_style.css">
 </head>
 <body>
     <header>
@@ -68,48 +12,41 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#positions">Open Positions</a></li>
+            <li><a href="#about"><button type="button" class="btn">About</button></a></li>
+            <li><a href="#research"><button type="button" class="btn">Research</button></a></li>
+            <li><a href="#publications"><button type="button" class="btn">Publications</button></a></li>
+            <li><a href="#contact"><button type="button" class="btn">Contact</button></a></li>
+            <li><a href="#positions"><button type="button" class="btn">Positions</button></a></li>
         </ul>
     </nav>
-    <div class="container">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </section>
-        <section id="research">
-            <h2>Research</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur.About Us
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </section>
-        <section id="team">
-            <h2>Team</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </section>
+    <div class="scrolling-wrapper">
+        <div class="container">
+            <section id="about">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+        </div>
+        <div class="container">
+            <section id="research">
+                <h2>Research</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                    fugiat nulla pariatur.About Us
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </section>
+        </div>
+        <div class="container">
         <section id="publications">
             <h2>Publications</h2>
             <p>
@@ -121,6 +58,8 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </section>
+        </div>
+        <div class="container">
         <section id="contact">
             <h2>Contact</h2>
             <p>
@@ -132,6 +71,8 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </section>
+        </div>
+        <div class="container">
         <section id="positions">
             <h2>Open Positions</h2>
             <p>
@@ -143,6 +84,7 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </section>
+        </div>
     </div>
 </body>
 </html>
