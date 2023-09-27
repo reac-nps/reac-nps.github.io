@@ -34,11 +34,9 @@
     text-transform: uppercase;
 }
 .hoverable-element{
-    
     transition: transform 0.3s;
 }
 .hoverable-element:hover{
-
     transform: scaleX(1.1);
     transform: skewY(-20deg);
 }
@@ -49,7 +47,6 @@
     width: 100%;
     height: 100%;
     transform: skewX(20deg);
-
 }
 
 .hcentered{
@@ -96,12 +93,22 @@
     height: 100%;
     background-color:var(--item-bg-color);
     padding: 50px;
-
+    min-height: 600px;
+}
+.subcontainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.subcontainer > div{
+    flex: 1 1 50%;
+}
+.text-block{
     color: var(--main-text-color);
+    display: inline;
     text-align: center;
     white-space: normal;
-    display: inline;
-    min-height: 600px;
+
 }
 .author-info {
     background: rgba(0, 0, 0, 0.75);
@@ -147,7 +154,6 @@ body {
     margin: 0px auto;
 }
 .sidepic{
-    width: 20%;
     height: 100%;
 }
 .wrap{
