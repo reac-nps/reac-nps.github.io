@@ -25,24 +25,31 @@
     font-weight: 600;
 }
 .top-bar-element{
+    padding: 5px 0px 5px;
+
     min-width: 50px;
+    min-height: 50px;
     transform: skewX(-20deg);
 
     text-transform: uppercase;
 }
 .hoverable-element{
-    transition: background-color 0.3s;
+    
+    transition: transform 0.3s;
 }
 .hoverable-element:hover{
 
-    background-color: #344955;
+    transform: scaleX(1.1);
+    transform: skewY(-20deg);
 }
 .top-bar-element-content{
-    margin: auto 0px;
     text-align: center;
     padding: 5px;
     min-width: 50px;
+    width: 100%;
+    height: 100%;
     transform: skewX(20deg);
+
 }
 
 .hcentered{
@@ -114,7 +121,10 @@ img {
     object-fit: cover;
 }
 .btn {
-    margin: auto;
+    display: block;
+    padding: 1em;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     font-weight : 530;
     font-size: large;
