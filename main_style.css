@@ -45,6 +45,10 @@
     transform: scaleX(1.1);
     transform: skewY(-20deg);
 }
+.hoverable-element:active{
+    transform: translateX(1px);
+}
+
 .top-bar-element-content{
     text-align: center;
     padding: 5px;
@@ -170,6 +174,7 @@ img {
     font-size: large;
     color: var(--main-text-color);
 }
+
 
 html,body {
     height: 100%;
